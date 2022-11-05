@@ -12,17 +12,22 @@ namespace Decorator
         {
             Vehicle car = new Car();
             Vehicle speedCar = new VehicleSpeedDecorator(new Car());
+            Vehicle train = new Train();
             Vehicle speedTrain = new VehicleSpeedDecorator(new Train());
 
-            Console.WriteLine("Normal Car");
+            Console.WriteLine("+++Normal Car+++");
             car.Drive();
 
-            Console.WriteLine("Speed Car");
+            Console.WriteLine("@@@Speed Car@@@");
             speedCar.Drive();
 
-            Console.WriteLine("Speed Train");
+            Console.WriteLine("+++Normal Train+++");
+            train.Drive();
+
+            Console.WriteLine("@@@Speed Train@@@");
             speedTrain.Drive();
 
+            Console.ReadKey();
 
         }
     }

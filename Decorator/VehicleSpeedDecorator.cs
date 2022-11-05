@@ -21,7 +21,7 @@ namespace Decorator
 
         private void SetSpeed(Vehicle decoratedVehicle)
         {
-            Console.WriteLine("High");
+            Console.WriteLine("High Speed");
         }
     }
 }
